@@ -15,7 +15,8 @@ A checklist used for all projects when going live
 
 - [ ]  Use the Chrome DevTools and throttle your CPU and network with 10x CPU slowdown and set the network to "Good 3G".
 - [ ]  [https://github.com/thedaviddias/Front-End-Performance-Checklist](https://github.com/thedaviddias/Front-End-Performance-Checklist)
-
+- [ ]  Review cross browser compatibility. [BrowserShots](http://browsershots.org)
+- [ ]  Test your website’s performance. [GT Matrix](https://gtmetrix.com/)
 # 2. Check content (with an open console)
 
 - [ ]  Are 404, 500 and 503 pages provided? Do they provide useful content like 'back to home', search or a navigation tree?
