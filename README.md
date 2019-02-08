@@ -613,8 +613,8 @@ All icons are provided by [Icons8](https://icons8.com/)
 [images]: images/images.png
 [javascript]: images/javascript.png
 [server-side]: images/server-side.png
-[meta]: images/server-side.png
+[meta]: images/meta.png
 
-[low]: https://front-end-checklist.now.sh/low.svg
-[medium]: https://front-end-checklist.now.sh/medium.svg
-[high]: https://front-end-checklist.now.sh/high.svg
+[low]: images/low.svg
+[medium]: images/medium.svg
+[high]: images/high.svg
