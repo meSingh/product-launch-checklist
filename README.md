@@ -37,6 +37,12 @@
     </script>
     ```
 
+- [ ] **Favicon present:** ![high] Does Favicon load? Pin the tab in Safari to check pinned icon
+- [ ] **Meta Title / Description Available:**  ![high] Check page titles / descriptions
+- [ ] **Social Tags Present:** ![high] Test Facebook sharing. Provide og-tags if needed
+
+* 🛠 [HEY META - Website Meta Tag Check](http://www.heymeta.com/)
+
 **[⬆ back to top](#table-of-contents)**
 
 ## CSS
@@ -67,22 +73,12 @@
     <noscript><link rel="stylesheet" href="global.min.css"></noscript>
     ```
 
-    *Why:*
-    > CSS files can block the page load and delay the rendering of your page. Using `preload` can actually load the CSS files before the browser starts showing the content of the page.
-
-    *How:*
     > ⁃ You need to add the `rel` attribute with the `preload` value and add `as="style"` on the `<link>` element.
 
     * 🛠 [preload-webpack-plugin](https://github.com/GoogleChromeLabs/preload-webpack-plugin)
 
 
 - [ ] **Unused CSS:** ![medium] Remove unused CSS selectors.
-
-    *Why:*
-    > Removing unused CSS selectors can reduce the size of your files and then speed up the load of your assets.
-
-    *How:*
-    > ⁃ ⚠️ Always check if the framework CSS you want to use don't already has a reset / normalize code included. Sometimes you may not need everything that is inside your reset / normalize file.
 
     * 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
     * 🛠 [PurgeCSS](https://github.com/FullHuman/purgecss)
@@ -102,7 +98,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     ```
 
-    *How:*
     > ⁃ Before prefetching your webfonts, use webpagetest to evaluate your website <br>
     ⁃ Look for teal colored DNS lookups and note the host that are being requested <br>
     ⁃ Prefetch your webfonts in your `<head>` and add eventually these hostnames that you should prefetch too
@@ -174,12 +169,6 @@
 - [ ] **Minimizing HTTP requests:** ![high] Always ensure that every file requested are essential for your website or application.
 - [ ] **Use a CDN to deliver your assets:** ![medium] Use a CDN to deliver faster your content over the world.
 
-- [ ]  Check SSL certificate health https://www.ssllabs.com/ssltest/
-
-- [ ]  Verify that all http status codes are ok with https://github.com/spatie/http-status-check
-- [ ]  Scan for mixed content with https://github.com/spatie/mixed-content-scanner-cli
-- [ ]  Verify Tag Manager / Analytics have been correctly set up
-
 - [ ] **Set HTTP cache headers properly:** ![high] Set HTTP headers to avoid expensive number of roundtrips between your browser and the server.
  * 📖 [Using cache-control for browser caching](https://varvy.com/pagespeed/cache-control.html)
 
@@ -187,12 +176,7 @@
 
  * 🛠 [Check GZIP compression](https://checkgzipcompression.com/)
  * 🛠 [Check Brotli Compression](https://tools.keycdn.com/brotli-test)
- * 📖 [Can I use... Brotli](https://caniuse.com/#feat=brotli)
-
-
-
-
-
+ * 📖 [Can I use... Brotli](https://caniuse.com/#feat=brotli)ssdxca
 
 
 **[⬆ back to top](#table-of-contents)**
@@ -203,45 +187,42 @@
 
 ![meta]
 
-- [ ]  Check page titles / descriptions
-- [ ]  Test Facebook sharing. Provide og-tags if needed
-- [ ]  Does Favicon load? Pin the tab in Safari to check pinned icon
-- [ ]  Check domain on HeyMeta.com
-    [HEY META - Website Meta Tag Check](http://www.heymeta.com/)
-    
-- [ ]  Check site on : [https://varvy.com](https://varvy.com)
+- [ ] **Content Security:** ![low] Content Security Policy 101
 
-    [Varvy SEO tool and optimization guide](https://varvy.com)
-- [ ]  Content Security Policy 101
+* 📖 [Content Security Policy 101](https://christoph-rumpel.com/2018/03/content-security-policy-101)
 
-    [Content Security Policy 101](https://christoph-rumpel.com/2018/03/content-security-policy-101)
+- [ ] **Robots.txt:** ![high] Verify robots.txt is present and allow's all robots
+- [ ] **Sitemap:** ![high] ensure that a sitemap is present and if the content is dynamic, proper functionality is there to auto update it
+- [ ] **Analytics:** ![high] Verify Tag Manager / Analytics have been correctly set up
     
 ### Cloudflare
 
-- [ ]  Set CloudFlare and do that necessary configurations
+- [ ] ![high] Set CloudFlare and do that necessary configurations
     - [ ]  **Crypto Tab:**
         - [ ]  SSL => Flexible
         - [ ]  Always use HTTPS => YES
         - [ ]  Automatic HTTPS Rewrites => YES
-    - [ ]  Firewall:
+    - [ ]  **Firewall Tab:**
         - [ ]  Security Level => Essentially Off
 
 
 ### Google Search Console
 
-- [ ]  Submit all www/non-www http/https variations
-- [ ]  Set up one non-www/www https as the preferred domain
-- [ ]  Crawl > Fetch as Google > Submit to index to kickstart index
+- [ ] ![low] Submit all www/non-www http/https variations
+- [ ] ![low] Set up one non-www/www https as the preferred domain
+- [ ] ![low] Crawl > Fetch as Google > Submit to index to kickstart index
 
-### Server
+### Backups
 
-- [ ]  Are Server backups enabled?
-- [ ]  Are Amazon S3 backups enabled for database?
+- [ ] **Server:** ![medium] Are Server backups enabled?
+- [ ] **Database:** ![medium] Are Amazon S3 backups enabled for database?
 
 ### Github
 
-- [ ]  Remove `develop` branch or other stale branches
-- [ ]  Write a solid README : [How to write a README that rocks](https://m.dotdev.co/how-to-write-a-readme-that-rocks-bc29f279611a)
+- [ ]  **Branches Cleanup:** ![low] Remove `develop` branch or other stale branches
+- [ ]  **Write a solid README:** ![medium] [How to write a README that rocks](https://m.dotdev.co/how-to-write-a-readme-that-rocks-bc29f279611a)
+### Twitter
+- [ ] Finally, let the world know... 
 
 **[⬆ back to top](#table-of-contents)**
 
