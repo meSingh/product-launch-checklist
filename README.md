@@ -1,5 +1,5 @@
 <h1 align="center">
-  Product Launch Checklist [WIP]
+  Product Launch Checklist
 </h1>
 
 <h4 align="center">A checklist used for all projects when going live</h4>
@@ -38,6 +38,7 @@
     ```
 
 - [ ] **Favicon present:** ![high] Does Favicon load? Pin the tab in Safari to check pinned icon
+* 🛠 [Real Favicon Generator](https://realfavicongenerator.net)
 - [ ] **Meta Title / Description Available:**  ![high] Check page titles / descriptions
 - [ ] **Social Tags Present:** ![high] Test Facebook sharing. Provide og-tags if needed
 
