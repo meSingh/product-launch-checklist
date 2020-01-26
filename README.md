@@ -199,11 +199,12 @@
 ### Cloudflare
 
 - [ ] ![high] Set CloudFlare and do that necessary configurations
-    - [ ]  **Crypto Tab:**
-        - [ ]  SSL => Flexible
+    - [ ]  **SSL/TLS:**
+        - [ ]  Your SSL/TLS encryption mode => Flexible
+    - [ ]  **SSL/TLS -> Edge Certificates:**
         - [ ]  Always use HTTPS => YES
         - [ ]  Automatic HTTPS Rewrites => YES
-    - [ ]  **Firewall Tab:**
+    - [ ]  **Firewall -> Settings:**
         - [ ]  Security Level => Essentially Off
 
 
