@@ -214,6 +214,10 @@
 - [ ] ![low] Set up one non-www/www https as the preferred domain
 - [ ] ![low] Crawl > Fetch as Google > Submit to index to kickstart index
 
+### Bing Webmaster Tools
+
+- [ ] ![low] Submit the site to [Bing Webmaster](https://www.bing.com/webmaster/home/) OR Import from Google
+
 ### Backups
 
 - [ ] **Server:** ![medium] Are Server backups enabled?
